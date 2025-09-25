@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon Overlay</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+    .team {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .slot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0,0,0,0.6);
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        width: 120px;
+    }
+    .slot img {
+        width: 96px;
+        height: 96px;
+        object-fit: contain;
+        image-rendering: pixelated;
+    }
+    .name {
+        margin-top: 8px;
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="team">
+    <div class="slot">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" alt="Nebulak">
+        <div class="name">Nebulak (Gastly)</div>
+    </div>
+    <div class="slot">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" alt="Alpollo">
+        <div class="name">Alpollo (Haunter)</div>
+    </div>
+    <div class="slot">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="Gengar">
+        <div class="name">Gengar</div>
+    </div>
+    <div class="slot">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png" alt="Lin-Fu">
+        <div class="name">Lin-Fu (Mienfoo)</div>
+    </div>
+</div>
+</body>
+</html>
